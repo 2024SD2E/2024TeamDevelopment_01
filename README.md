@@ -7,6 +7,6 @@
 中西　優斗(フォロワー)<br>
 渡邉　統也(フォロワー)<br>
 安富　(フォロワー)
-<p>開発URL(ユーザー側)</p>
-https://aso2301376.vivian.jp/PHP2024/SE/G1.php
+<p>開発URL(ユーザー側)<br>
+https://aso2301376.vivian.jp/PHP2024/SE/G1.php</p>
 <p>開発URL(管理者側側)</p>
