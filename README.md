@@ -10,3 +10,4 @@
 <p>開発URL(ユーザー側)<br>
 https://aso2301376.vivian.jp/PHP2024/SE/G1.php</p>
 <p>開発URL(管理者側側)</p>
+https://aso2301376.vivian.jp/PHP2024/KSE/KG1.php<br>
