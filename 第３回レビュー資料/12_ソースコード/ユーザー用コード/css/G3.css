@@ -1,0 +1,17 @@
+.G3text-head {
+    font-size: 25px;
+}
+
+
+.G3text {
+    max-width: 1000px; /* 最大幅を指定 */
+    margin: 50px auto;
+}
+
+#G3about-img {
+    width: 80%; /* 親要素の幅に合わせる */
+    height: auto; /* アスペクト比を維持 */
+    margin: 50px auto;
+    padding: 0;
+    display: block; /* imgタグの改行のすき間を消す */
+}

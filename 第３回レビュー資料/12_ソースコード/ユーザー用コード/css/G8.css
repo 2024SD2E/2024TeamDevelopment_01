@@ -1,0 +1,119 @@
+.G8box1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* 中央揃え */
+    margin: 50px auto; /* 中央に配置 */
+    max-width: 800px; /* 最大幅を設定して画面幅が狭い時の調整をサポート */
+}
+
+
+.button-container {
+    display: flex;               /* フレックスレイアウトを使用 */
+    flex-direction: column;      /* ボタンを縦方向に配置 */
+    gap: 10px;                   /* ボタン間のスペースを調整 */
+}
+
+
+/* 画像にマージンを追加 */
+.cart-image {
+    width: 300px;
+    height: 200px;
+    margin-right: 20px; /* 画像とボタンの間のスペース */
+}
+
+.G8box2 {
+    padding: 0.5em 1em; /* 内側の余白を上下0.5em、左右1emに設定 */
+    margin: 2em 2em; /* 外側の余白を上下2em、左右2emに設定 */
+    font-weight: bold; /* 文字を太字に設定 */
+    border: solid 1px #000000; /* 黒の1pxの実線ボーダーを追加 */
+}
+
+.G8box2 p {
+    margin: 0; /* <p>要素の外側の余白を0に設定 */
+    padding: 0; /* <p>要素の内側の余白を0に設定 */
+}
+
+.btn-primary {
+    background-color: #ffd500; /* プライマリボタンの背景色 */
+    color: black; /* 文字色 */
+    padding: 0.5em 1em; /* 内側の余白 */
+    border: none; /* ボーダーをなしに */
+    border-radius: 20px; /* 角を丸く */
+    text-decoration: none; /* 下線をなしに */
+    display: inline-block; /* ブロック要素として表示 */
+}
+
+.btn-secondary {
+    background-color: #ffffff; /* セカンダリボタンの背景色 */
+    color: black; /* 文字色 */
+    padding: 0.5em 1em; /* 内側の余白 */
+    border-radius: 20px; /* 角を丸く */
+    text-decoration: none; /* 下線をなしに */
+    display: inline-block; /* ブロック要素として表示 */
+    border: 2px solid #000000; /* ボーダー */
+}
+
+.G8flex-container {
+    display: -webkit-flex; /* Safari 9以下対応 */
+    display: flex; /* Flexboxを使用 */
+    -webkit-flex-wrap: nowrap; /* Safari 9以下対応: アイテムを折り返さない */
+    flex-wrap: nowrap; /* アイテムを折り返さない */
+    -webkit-justify-content: space-around; /* Safari 9以下対応: アイテムの間隔を均等にする */
+    justify-content: space-around; /* アイテムの間隔を均等にする */
+    -webkit-align-items: stretch; /* Safari 9以下対応: アイテムを引き伸ばす */
+    align-items: stretch; /* アイテムを引き伸ばす */
+}
+
+.G8flex-item:nth-child(4) {
+    -webkit-align-self: auto; /* Safari 9以下対応: このアイテムのアラインメントをデフォルトに戻す */
+    align-self: auto; /* このアイテムのアラインメントをデフォルトに戻す */
+}
+
+.G8-title {
+    text-align: left; /* デフォルトでは左寄せ */
+    margin: 0; /* 上下のマージンを必要に応じて調整 */
+    margin-left: 30px; /* 左の感覚を調整 */
+}
+.centered {
+    text-align: center; /* 中央寄せ */
+}
+
+.G8product {
+    text-align: center; /* 中央寄せ */
+    margin: 0.5em; /* 商品間のマージンを追加 */
+}
+
+.G8product p {
+    font-size: 0.9em; /* 文字サイズを小さく */
+    margin: 0.5em 0 0; /* 上のマージンを設定 */
+}
+
+/* 画面幅が600px以下の場合 */
+@media (max-width: 600px) {
+    .G8box1 {
+        flex-direction: column; /* 縦並びに変更 */
+        align-items: center; /* 中央揃え */
+    }
+
+    .button-container {
+        width: 100%; /* ボタンが幅いっぱいになるように設定 */
+        text-align: center;
+    }
+
+    .G8flex-container {
+        flex-wrap: wrap; /* 商品が折り返されるように */
+        justify-content: center;
+    }
+
+    .G8product {
+        margin: 10px 0; /* 商品間に余白を設定 */
+        width: 100%; /* 商品を幅いっぱいに配置 */
+        text-align: center;
+    }
+}
+
+button.no-style {
+    all: unset; /* ボタンのスタイルをリセット */
+    cursor: pointer;
+}

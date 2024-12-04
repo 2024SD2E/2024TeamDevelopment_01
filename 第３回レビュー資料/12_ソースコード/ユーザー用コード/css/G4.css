@@ -1,0 +1,51 @@
+/*お問い合わせフォーム*/
+.contact-form {
+    max-height:100%;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.form-text {
+    height: 2.5em;
+    width: 100%;
+    padding: 0 16px;
+    border-radius: 4px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px #cccccc inset;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 14px;
+}
+
+.form-text:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+}
+
+.form-text2 {
+    height: 5em;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px #cccccc inset;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 10px;
+}
+
+.form-text2:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+}
+
+#message{
+    font-size: 14px;
+    height: 130px;
+}

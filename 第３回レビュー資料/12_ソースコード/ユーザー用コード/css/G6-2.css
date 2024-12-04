@@ -1,0 +1,139 @@
+/* 商品詳細の全体 */
+.product-detail {
+    display: flex; /* 横並びにする */
+    justify-content: space-between; /* 左右に間隔をあけて配置 */
+    align-items: center; /* 垂直方向に中央揃え */
+    margin-bottom: 20px;
+    max-width: 600px; /* 最大幅を設定（例：1200px） */
+    width: 25%; /* 親要素の幅に対して100%の幅 */
+}
+
+/* 商品画像の親要素 */
+.product-image-wrapper {
+    text-align: center; /* 画像を中央に配置 */
+    width: 300px;  /* 幅を固定 */
+    height: 300px; /* 高さを固定 */
+    overflow: hidden; /* はみ出した部分を隠す */
+    border-radius: 8px; /* 見た目を良くするために角を丸く */
+}
+
+/* 商品名アンダーライン */
+.product-name-wrapper h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* 薄い線を引く */
+    padding-bottom: 5px; /* 線とテキストの間隔を調整 */
+}
+
+/* 商品画像 */
+.product-image {
+    width: 100%; /* 親要素に幅を100%に合わせる */
+    height: 100%; /* 高さも100%に合わせる */
+    object-fit: cover; /* 画像が親要素にフィットし、アスペクト比を維持しつつ切り取られる */
+}
+
+/* 商品情報 */
+.product-info {
+    max-width: 400px; /* 右側の説明部分の幅 */
+    padding: 20px;
+}
+
+/* 商品名 */
+.product-name-wrapper h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 商品説明 */
+.product-description-wrapper p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: left; /* 左寄せにする */
+    word-wrap: break-word; /* 長い単語がある場合に折り返し */
+}
+
+
+/* 商品説明 */
+.product-detail2 {
+    font-size: 16px;
+    color: #555;
+    text-align: left; /* 左寄せ */
+    margin-top: 10px;
+}
+
+/* 価格とカカオ含有量を横並びにする */
+.product-price-wrapper p{
+    display: flex; /* 横並びに */
+    gap: 15px; /* 金額とカカオの間にスペースを設ける */
+}
+
+/* 価格とカカオ含有量を横並びにする */
+.product-cacao p{
+    display: flex; /* 横並びに */
+    gap: 15px; /* 金額とカカオの間にスペースを設ける */
+}
+
+button{
+    all: unset; /* ボタンのスタイルをリセット */
+}
+
+/* ボタンコンテナ */
+.buttons-container {
+    display: flex; /* 横並びにする */
+    gap: 20px; /* ボタン間の間隔 */
+    justify-content: flex-end; /* ボタンを右寄せ */
+    align-items: center; /* ボタンの高さを揃える */
+    width: 100%; /* 親要素の幅いっぱいに広げる */
+    box-sizing: border-box; /* 幅が親要素に収まるようにする */
+}
+
+/* 戻るボタン */
+.back-button-wrapper a,
+.add-to-cart-button {
+    display: inline-flex; /* インラインフレックスで揃える */
+    align-items: center; /* 中央揃え */
+    justify-content: center; /* 中央揃え */
+    height: 50px; /* ボタンの高さ */
+    padding: 0 20px; /* ボタンの左右の余白 */
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    min-width: 150px; /* ボタンの最小幅を設定 */
+}
+
+/* ホバー時のスタイル */
+.back-button-wrapper a:hover,
+.add-to-cart-button:hover {
+    background-color: #444;
+}
+
+/* ボタンの幅の調整 */
+.add-to-cart-button {
+    flex-grow: 1; /* 可能な限り幅を広げる */
+}
+
+/* 数量セレクトボックスのスタイル調整 */
+.quantity-wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-wrapper label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}

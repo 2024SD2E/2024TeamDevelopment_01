@@ -1,0 +1,89 @@
+/* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* メインコンテナ */
+.container {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto; /* 中央寄せ */
+}
+
+
+/* サイドバー */
+.sidebar {
+    width: 200px;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}
+
+.sidebar.greeting {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    color: black;
+}
+
+.sidebar button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 0 0 2px rgb(3, 3, 3) inset;
+}
+
+/* おすすめセクション */
+.recommendation {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.recommendation h2 {
+    font-size: 18px;
+    background-color: #f9f4d4;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 14px;
+}
+
+.product .price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button.no-style {
+    all: unset; /* ボタンのスタイルをリセット */
+    cursor: pointer;
+}

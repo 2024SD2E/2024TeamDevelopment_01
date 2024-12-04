@@ -1,0 +1,116 @@
+/* 全体のボックススタイル */
+.G8box1 {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 70px 130px;
+    background-color: #f9f9f9;
+}
+
+/* 各購入履歴の全体ボックス */
+.purchase-item {
+    border: 1px solid #ddd; /* 境界線を追加 */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px; /* 購入履歴の間に余白 */
+    background-color: #fff; /* 背景色を白に設定 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* ボックスの影 */
+}
+
+/* 境界線として各購入履歴の区切り */
+.purchase-item + .purchase-item {
+    border-top: 3px solid #f0f0f0; /* 境界線を太めに設定 */
+}
+
+/* テーブル */
+.purchase-info-table {
+    width: 100%;
+    table-layout: fixed; /* 横幅を固定 */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.purchase-info-table th, .purchase-info-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.purchase-info-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.purchase-info-table td {
+    font-size: 14px;
+}
+
+/* リンクの色を消す */
+a {
+    color: inherit; /* 親要素の色を継承 */
+    text-decoration: none; /* 下線を消す */
+}
+
+a:hover {
+    text-decoration: underline; /* ホバー時のみ下線をつける */
+}
+
+/* 商品リスト */
+.product-list ul {
+    list-style: disc; /* ディスク型マーカー */
+    padding-left: 20px;
+}
+
+/* 見出し */
+.G8-title {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* 戻るリンク */
+.back-to-shop {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* 商品情報テーブル */
+.product-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+/* テーブルヘッダー */
+.product-info-table th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* テーブルデータ */
+.product-info-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* ヘッダーとデータの間にスペースをつける */
+.product-info-table th, .product-info-table td {
+    border-right: 1px solid #ccc;
+}
+
+/* 最後のカラムの右側のボーダーをなくす */
+.product-info-table td:last-child,
+.product-info-table th:last-child {
+    border-right: none;
+}
+

@@ -1,0 +1,99 @@
+/* メインコンテナ */
+.form-container {
+    max-width: 800px; /* コンテナの最大幅 */
+    margin: 30px 280px; /* 上下に30pxの余白、中央寄せ */
+    background-color: #fff; /* 背景色を白に */
+    padding: 20px; /* 内部余白（パディング）を20pxに */
+    border-radius: 8px; /* 角を丸める */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 軽い影をつけて浮き上がらせる */
+}
+
+/* 戻るリンク */
+.back-link {
+    font-size: 1.0em; /* フォントサイズを少し大きめに */
+    margin-bottom: 20px; /* 下部に20pxの余白 */
+}
+
+.back-link a {
+    text-decoration: none; /* リンクの下線を削除 */
+    color: #333; /* リンクの色はダークグレー */
+}
+
+.back-link a:hover {
+    color: #000000; /* ホバー時に色を黒に変更 */
+}
+
+/* セクションヘッダー */
+h2 {
+    font-size: 1.6rem; /* 見出しのフォントサイズ */
+    color: #333; /* 色はダークグレー */
+    margin-bottom: 20px; /* 下部に20pxの余白 */
+}
+
+/* フォームの入力フィールド */
+.form-group {
+    margin-bottom: 15px; /* 各入力フィールドの下に15pxの余白 */
+}
+
+.form-group h3 {
+    font-size: 1.1rem; /* フォームのラベル（サブ見出し）のフォントサイズ */
+    margin-bottom: 8px; /* ラベルの下に8pxの余白 */
+    color: #555; /* ラベルの色は少し薄いグレー */
+}
+
+.form-group input,
+.form-group select {
+    width: 100%; /* 入力フィールドを横幅いっぱいに */
+    padding: 10px; /* 内部の余白 */
+    font-size: 0.9rem; /* フォントサイズは標準 */
+    border: 1px solid #ccc; /* 薄いグレーの境界線 */
+    border-radius: 4px; /* 角を少し丸める */
+    background-color: #f9f9f9; /* 背景色は淡いグレー */
+    transition: border 0.3s; /* フォーカス時の境界線の変化を滑らかに */
+}
+
+/* オプションセレクトのスタイル */
+.form-group select {
+    appearance: none; /* 標準のドロップダウン矢印を消す */
+    -webkit-appearance: none; /* Safari用 */
+    -moz-appearance: none; /* Firefox用 */
+    background-color: #f9f9f9; /* 背景色を入力フィールドと一致させる */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><polygon points="0,0 10,0 5,10" fill="%23333"/></svg>'); /* ドロップダウン矢印をカスタム画像に */
+    background-position: right 10px center; /* 矢印を右端に配置 */
+    background-repeat: no-repeat; /* 繰り返しなし */
+    background-size: 10px 10px; /* 矢印のサイズ */
+}
+
+/* フォームフィールドがフォーカスを受けた時のスタイル */
+.form-group input:focus {
+    border-color: #000000; /* フォーカス時に境界線を黒に変更 */
+    background-color: #fff; /* フォーカス時に背景を白に変更 */
+}
+
+/* パスワード変更セクション */
+.password-change {
+    margin-top: 30px; /* 上部に30pxの余白 */
+}
+
+.password-change h2 {
+    font-size: 1.5rem; /* 見出しのフォントサイズ */
+    color: #333; /* 色はダークグレー */
+    margin-bottom: 20px; /* 下部に20pxの余白 */
+}
+
+/* ボタン */
+.form-submit button {
+    background-color: #000000; /* ボタンの背景色を黒に */
+    color: white; /* ボタンのテキスト色を白に */
+    padding: 12px 20px; /* 内部余白（パディング）を上下12px、左右20px */
+    font-size: 1.1rem; /* フォントサイズを少し大きめに */
+    border: none; /* ボーダーなし */
+    border-radius: 4px; /* 角を丸める */
+    cursor: pointer; /* ポインタがボタンに乗るとカーソルが変わる */
+    width: 100%; /* ボタンを横幅いっぱいに */
+    transition: background-color 0.3s; /* ホバー時に背景色が変わるようにスムーズなトランジションを設定 */
+}
+
+.form-submit button:hover {
+    background-color: #000000; /* ホバー時にも背景色は変わらないが、効果を付けたい場合ここで設定 */
+}

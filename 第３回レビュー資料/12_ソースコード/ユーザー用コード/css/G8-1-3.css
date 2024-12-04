@@ -1,0 +1,205 @@
+/* メインコンテンツ */
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* フォームセクション */
+.form-section {
+    margin-bottom: 20px;
+}
+
+/* セクションタイトル */
+.form-section-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* フォームグループ */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #000000;
+    background-color: #fff;
+}
+
+.form-note {
+    font-size: 0.875rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+.error {
+    border-color: red;
+}
+
+/* ボタン */
+.submit-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.submit-button:hover {
+    background-color: #000000;
+}
+
+/* お名前フィールド（姓と名）を横並びに */
+.name-fields {
+    display: flex;
+    justify-content: space-between; /* フィールド間に均等なスペースを確保 */
+    gap: 20px; /* 各フィールド間に20pxのギャップ */
+}
+
+/* お名前フィールド（姓と名）の個別スタイル */
+.name-field {
+    flex: 1; /* フィールドが均等に広がる */
+}
+
+/* 名前（姓・名）のラベルと入力フィールドのスタイル */
+.form-label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #000000;
+    background-color: #fff;
+}
+
+.form-note {
+    font-size: 0.875rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+
+/* ショッピングカート */
+.cart-section {
+    margin-top: 40px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-controls select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-summary .subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-summary .total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 戻るリンク */
+.back-to-shop {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.back-to-shop a {
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-shop a:hover {
+    text-decoration: underline;
+}

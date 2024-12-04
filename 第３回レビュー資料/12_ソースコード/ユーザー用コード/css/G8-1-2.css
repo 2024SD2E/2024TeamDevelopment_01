@@ -1,0 +1,200 @@
+/* メインコンテンツを画面中央に配置 */
+.main-container {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦方向に要素を並べる */
+    justify-content: center; /* 縦方向の中央寄せ */
+    align-items: center; /* 横方向の中央寄せ */
+    min-height: 100vh; /* ビューポート全体の高さを確保 */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* フォームセクションの調整 */
+.form-section {
+    width: 100%; /* 必要に応じて幅を設定 */
+    max-width: 600px; /* 最大幅を指定 */
+    padding: 20px;
+    box-sizing: border-box; /* パディングを含めたサイズ計算 */
+    text-align: center; /* テキストを中央揃え */
+    margin: 0 auto; /* 横方向の中央寄せ */
+}
+
+
+/* セクションタイトル */
+.form-section-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+.form-group {
+    margin-bottom: 40px; /* フォーム間の縦マージンを広げる */
+}
+
+
+.error {
+    border-color: red;
+}
+
+/* ボタン */
+.submit-button {
+    background-color: #000;  /* 背景色を黒 */
+    color: #fff;  /* 文字色を白 */
+    padding: 20px 40px;  /* ボタンの内側の余白 */
+    font-size: 1.2rem;  /* 文字サイズ */
+    border: none;  /* ボタンの枠線をなし */
+    border-radius: 4px;  /* 角を丸くする */
+    cursor: pointer;  /* ボタン上にカーソルが来たときにポインターを表示 */
+    transition: background-color 0.3s ease;  /* 背景色の変化をスムーズに */
+    display: inline-block;  /* インラインブロックとして表示 */
+    margin: 20px auto 0;  /* ボタンを中央に配置 */
+    text-align: center;  /* 文字を中央揃え */
+    width: auto;  /* 幅は自動 */
+    height: 50px;  /* ボタンの高さ */
+    line-height: 15px;  /* 高さに合わせて文字を中央に配置 */
+    box-sizing: border-box;  /* paddingを含めたサイズ計算 */
+}
+
+
+.submit-button:hover {
+    background-color: #000000;
+}
+
+
+.form-input {
+    width: 500px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #000000;
+    background-color: #fff;
+}
+
+.form-note {
+    font-size: 0.875rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+
+.cart-section {
+    margin-top: 40px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-controls select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-summary .subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-summary .total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 戻るリンク */
+/* 戻るボタンのスタイルを調整 */
+.back-to-shop {
+    font-size: 14px; /* 文字サイズ */
+    margin-bottom: 20px; /* ボタンの下方向の余白 */
+    display: inline-block; /* 必要に応じてインラインブロックに変更 */
+    margin-left: -450px; /* 左方向にマージンを追加 */
+}
+
+.back-to-shop a {
+    color: #333; /* テキスト色 */
+    text-decoration: none; /* 下線を削除 */
+}
+
+.back-to-shop a:hover {
+    text-decoration: underline; /* ホバー時に下線を表示 */
+}
+
+
+button{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.form-text {
+    margin-top: 30px !important;
+    font-size: 18px !important;
+}
+
+.submit-button{
+    margin-bottom: 50px;
+}
+

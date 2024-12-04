@@ -1,0 +1,63 @@
+.G6text select {
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 18px;
+    color: #333;
+}
+
+.G6text label{
+    font-size: 20px;
+}
+
+/* ボタンのスタイル */
+.search-toggle-btn {
+    width: 140px;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-toggle-btn:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-toggle-btn:active {
+    transform: translateY(0px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 18px;
+    color: #333;
+    margin: 60px 0 60px 0;
+    font-size: 16px;
+}
+
+.category1{
+    margin-top: 60px;
+}
+
+.category2{
+    margin: 60px 0;
+}

@@ -1,0 +1,37 @@
+/* Q&Aセクションのスタイル */
+.qna-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    padding: 20px;
+    color: #333;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.qna-item {
+    background-color: #f9f9d1; /* 質問・回答部分の背景色 */
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qna-question {
+    font-weight: bold;
+    color: #ffffff;
+    background-image: url('../upload/QA1.jpg'); /* 背景画像を指定 */
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.qna-answer {
+    background-image: url('../upload/QA2.jpg'); /* 背景画像を指定 */
+    padding: 15px;
+    color: #333;
+    border-radius: 0 0 8px 8px;
+    font-size: 16px;
+}
