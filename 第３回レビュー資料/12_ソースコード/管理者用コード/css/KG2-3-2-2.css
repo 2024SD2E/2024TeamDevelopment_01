@@ -1,0 +1,61 @@
+
+h2{
+    margin-top: 20px; /* 上に余白 */
+    margin-bottom: 20px; /* 下に余白 */
+    padding: 10px; /* 内側の余白 */
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 縦方向の中央揃え */
+    
+}
+.textbox-1-label,
+label{
+   
+        display: flex;
+        justify-content: center; /* 水平方向の中央揃え */
+        align-items: center; /* 垂直方向の中央揃え */
+        flex-direction: column; /* 子要素を縦に並べる */
+        margin: 0; /* デフォルトの余白をリセット */
+        
+}
+
+
+.text-label {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* 水平方向の中央揃え */
+}
+
+.textbox-1 {
+    color: #333;
+}
+
+.textbox-1-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.textbox-1 {
+    display: flex;
+    width: 300px;
+    padding: 8px 10px;
+    border: 1px solid #969da3;
+    border-radius: 3px;
+    line-height: 1.5;
+}
+
+.textbox-1::placeholder {
+    color: #999;
+}
+.area {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center; /* 中央揃え */
+   margin: auto;
+   gap: 50px; /* ボタン同士の間隔を10pxに設定 */
+    height: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+   
+}

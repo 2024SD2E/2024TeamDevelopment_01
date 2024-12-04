@@ -1,0 +1,34 @@
+.button-container {
+    display: grid; /* グリッドレイアウトを使用 */
+    grid-template-columns: repeat(2, auto); /* 通常は2列 */
+    gap: 20px; /* ボタン間の間隔 */
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center; /* 縦方向の中央揃え */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.button {
+    display: flex; /* ボタン内部のコンテンツをフレックスボックスに */
+    align-items: center; /* 縦方向で中央揃え */
+    justify-content: center; /* 横方向で中央揃え */
+    width: 350px;
+    height: 80px;
+    background-color: rgb(247, 242, 233); /* ボタンの背景色 */
+    color: black; /* 文字色 */
+    border-radius: 5px; /* 角を丸く */
+    font-size: large; /* フォントサイズ */
+    border: 1px solid #333; /* 枠線 */
+    text-align: center;
+}
+
+/* 画面幅が768px以下のとき、1列に変更してボタンを中央揃え */
+@media screen and (max-width: 768px) {
+    .button-container {
+        grid-template-columns: 1fr; /* 1列に設定 */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

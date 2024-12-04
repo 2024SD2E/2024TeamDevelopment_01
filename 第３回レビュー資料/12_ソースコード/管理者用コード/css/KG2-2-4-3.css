@@ -1,0 +1,56 @@
+/* 画面全体を中央揃え */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh; /* 画面全体の高さをカバー */
+    background-color: #f9f9f9; /* 背景色 */
+    text-align: center; /* テキスト中央揃え */
+}
+
+/* メッセージスタイル */
+h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* ボタンのデザイン */
+button.back-button {
+    width: 90%; /* ボタンの幅を親要素の90%に設定 */
+    max-width: 500px; /* ボタンの幅が最大400pxを超えないよう制限 */
+    padding: 10px 20px; /* ボタン内のテキストに上下10px、左右20pxの余白を追加 */
+    margin: 15px auto; /* ボタンの外側に上下15pxの余白を追加し、左右は自動で中央揃え */
+    border: none; /* ボタンのデフォルトの枠線を削除 */
+    border-radius: 25px; /* ボタンの角を25px丸くする */
+    background-color: #333; /* ボタンの背景色を濃いグレーに設定 */
+    color: white; /* ボタン内のテキスト色を白に設定 */
+    font-size: 1rem; /* ボタン内テキストのフォントサイズを標準（1rem）に設定 */
+    cursor: pointer; /* ボタンにマウスをホバーした際にカーソルがポインターに変化 */
+    transition: background-color 0.3s ease; /* 背景色の変化を0.3秒かけてスムーズにする */
+    display: block; /* ボタンをブロック要素として扱い、中央揃えが可能に */
+    box-sizing: border-box; /* パディングとボーダーを幅・高さに含める計算方法 */
+    bottom: 50%; /* ボタンを親要素の底部から20%の位置に配置 */
+}
+
+
+/* ボタンのホバー効果 */
+button.back-button:hover {
+    background-color: #444;
+}
+
+.back-link {
+    max-width: 250px; /* ボタンの幅が最大400pxを超えないよう制限 */
+    width: 50%; /* ボタンの幅を親要素の90%に設定 */
+    position: fixed; /* ボタンを画面に固定 */
+    bottom: 50%; /* 画面の下から15%上に配置 */
+    text-decoration: none; /* テキストの下線を削除 */
+    font-size: 25px; /* ボタンの文字サイズ */
+    text-align: center; /* テキストの中央揃え */
+    cursor: pointer; /* カーソルをポインタに変更 */
+    color: rgb(255, 255, 255);
+    border-radius: 25px; /* ボタンの角を25px丸くする */
+    background-color: #333; /* ボタンの背景色を濃いグレーに設定 */
+}

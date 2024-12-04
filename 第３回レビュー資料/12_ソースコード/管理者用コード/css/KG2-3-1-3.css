@@ -1,0 +1,24 @@
+body{
+    height: 100%; /* 親要素も100%の高さに設定 */
+  margin: 0; /* 余白をなくす */
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 上寄せにする */
+    height: 100%; /* ページ全体の高さ */
+    padding-top: 20vh; /* 画面の高さの20%を上に空白として設定 */
+    font-size: 5em; /* 文字サイズを調整 */
+    text-align: center;
+}
+.area {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; /* 中央揃え */
+    margin: auto;
+     height: 3em;
+     padding-left: 1em;
+     padding-right: 1em;
+    
+ }

@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* .header-inner */
+.header-inner { 
+    position: relative; /* 相対位置に設定。子要素の絶対位置（absolute）の基準となる */
+    max-width: 1200px;   /* 最大幅を1200pxに設定 */
+    margin: 0 auto;      /* 水平方向に中央揃え。親要素内で左右の余白を自動で調整 */
+}
+ /*.header-modoru */
+.header-inner .header-back { 
+    position: absolute; /* 親要素（.header-inner）を基準に絶対位置で配置 */
+    top: 50%;           /* 親要素の高さの50%に垂直方向で配置（上端を中央に配置） */
+    transform: translateY(-50%); /* 自身の高さの50%分だけ上に移動し、垂直方向で完全に中央揃えにする */
+    left: 25%;         /* 親要素の左端から20em分、右に移動（相対的に配置） */
+    color: blue;
+} 
+.header-inner .header-title {    
+    text-align: center; /* テキストを水平方向で中央揃え */
+}
+h2{
+    margin-top: 20px; /* 上に余白 */
+    margin-bottom: 20px; /* 下に余白 */
+    padding: 10px; /* 内側の余白 */
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 縦方向の中央揃え */
+    
+}
+
+label{
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    flex-direction: column; /* 子要素を縦に並べる */
+    margin: 0; /* デフォルトの余白をリセット */
+    padding-bottom: 17px;
+    box-sizing: border-box;
+}
+
+.text-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.textbox {
+    display: flex;
+    width: 300px;
+    padding: 8px 10px;
+    border: 1px solid #969da3;
+    border-radius: 10px;
+    line-height: 1.5;
+    color: #333;
+}
+.textbox2 {
+    display: flex;
+    width: 150px;
+    padding: 8px 10px;
+    border: 1px solid #969da3;
+    border-radius: 10px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.textbox::placeholder {
+    color: #999;
+}
+.area {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* 中央揃え */
+    margin: auto;
+    gap: 50px;
+    /* ボタン同士の間隔を10pxに設定 */
+    height: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 20px;/* 下に余白 */
+}

@@ -1,0 +1,25 @@
+table{
+    width: 100vw;
+
+    margin: auto;
+}
+td{
+    height: 100%;
+}
+.area {
+    display: flex;
+    flex-direction: column; /* 縦方向に配置 */
+    align-items: center; /* 中央揃え */
+}
+.block {
+    width: 100px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+}
+

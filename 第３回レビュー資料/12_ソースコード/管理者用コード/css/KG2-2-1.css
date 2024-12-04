@@ -1,0 +1,28 @@
+    label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+    }
+    .kg2-2-1 {
+            padding-left: 42%;
+        }
+
+    .kg2-2-1-1 {
+            text-align: center;
+        }
+    .kg2-2-1-2{
+        padding-left: 45%;
+        }
+        input[type="text"] {
+            padding: 7px;
+            margin-top: 5px auto;
+            border: 1px solid #333;
+            border-radius: 25px;
+            font-size: 1rem;
+            outline: none;
+            text-align: center;
+        
+        }
+        
+        
+
